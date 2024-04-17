@@ -11,21 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c7ab5fe-412b-4f67-ae75-9022e8006e1a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Library.Core/UserGroup/Services/UserService.Get.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/dataSources/16a5e250-b487-4465-9bf8-8ed7bc82f0ee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/dataSources/16a5e250-b487-4465-9bf8-8ed7bc82f0ee.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Core/UserGroup/Utils/TokenUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Core/UserGroup/Utils/TokenUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Server/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Server/Controllers/UserController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Server/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Server/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Server/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/library.client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/library.client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.client/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/library.client/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.client/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.client/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/library.client/src/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.client/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/library.client/src/store/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.client/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/library.client/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Core/UserGroup/Services/UserService.Get.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Core/UserGroup/Services/UserService.Get.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Data/DbContextInitialiser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Data/DbContextInitialiser.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +150,7 @@
       <workItem from="1713218451114" duration="13440000" />
       <workItem from="1713278794847" duration="1409000" />
       <workItem from="1713290681472" duration="2028000" />
-      <workItem from="1713299307542" duration="21747000" />
+      <workItem from="1713299307542" duration="22602000" />
     </task>
     <servers />
   </component>

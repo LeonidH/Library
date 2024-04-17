@@ -69,7 +69,7 @@ public class DbContextInitialiser(
 
         var administrator = new ApplicationUser
         {
-            UserName = "admin",
+            UserName = "admin@library.com",
             Email = "admin@library.com",
         };
         

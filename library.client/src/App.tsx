@@ -17,7 +17,7 @@ const getAuthorzedUserLayout = (auth: AuthState) => {
         case 'librarian':
             return <LibrarianLayout />;
         default:
-            return <DefaultLayout />;
+            return <UserLayout />;
     }
 };
 
