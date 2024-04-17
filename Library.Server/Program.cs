@@ -1,5 +1,6 @@
 using System.Text;
 using Library.Core.Options;
+using Library.Core.UserGroup.Services;
 using Library.Data;
 using Library.Data.Entities;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -58,6 +59,7 @@ namespace Library.Server
             });
 
             builder.Services.AddScoped<DbContextInitialiser>();
+            builder.Services.AddTransient<UserService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

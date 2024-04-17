@@ -7,12 +7,15 @@ import path from 'path';
 import child_process from 'child_process';
 import { env } from 'process';
 
+import svgr from 'vite-plugin-svgr';
+
+
 const baseFolder =
     env.APPDATA !== undefined && env.APPDATA !== ''
         ? `${env.APPDATA}/ASP.NET/https`
         : `${env.HOME}/.aspnet/https`;
 
-const certificateName = "library.client";
+const certificateName = "reactapp1.client";
 const certFilePath = path.join(baseFolder, `${certificateName}.pem`);
 const keyFilePath = path.join(baseFolder, `${certificateName}.key`);
 
@@ -31,11 +34,11 @@ if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
 }
 
 const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_HTTPS_PORT}` :
-    env.ASPNETCORE_URLS ? env.ASPNETCORE_URLS.split(';')[0] : 'https://localhost:7138';
+    env.ASPNETCORE_URLS ? env.ASPNETCORE_URLS.split(';')[0] : 'https://localhost:7083';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [plugin()],
+    plugins: [svgr(), plugin()],
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))
@@ -43,10 +46,22 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            '^/weatherforecast': {
+            '^/user/get': {
                 target,
                 secure: false
-            }
+            },
+            '^/user/login': {
+                target,
+                secure: false
+            },
+            '^/user/profile': {
+                target,
+                secure: false
+            },
+            '^/user/register': {
+                target,
+                secure: false
+            },
         },
         port: 5173,
         https: {

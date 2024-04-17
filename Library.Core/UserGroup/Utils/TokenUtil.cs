@@ -17,7 +17,8 @@ public static class TokenUtil
             var userClaims = new List<Claim>
             {
                 new("Id", user.Id.ToString()),
-                new ("UserName", user.UserName??"")
+                new ("UserName", user.UserName??""),
+                new ("UserRole", roleClaims.FirstOrDefault(x => x.Type == ClaimTypes.Role)?.Value??""),
             };
             userClaims.AddRange(roleClaims);
             var tokeOptions = new JwtSecurityToken(
@@ -27,8 +28,9 @@ public static class TokenUtil
                 expires: DateTime.UtcNow.AddSeconds(appSettings.TokenExpireSeconds),
                 signingCredentials: signInCredentials
             );
-            var tokenString = new JwtSecurityTokenHandler().WriteToken(tokeOptions);
-            return tokenString;
+            var handler = new JwtSecurityTokenHandler();
+            
+            return handler.WriteToken(tokeOptions);
         }
 
         public static ClaimsPrincipal GetPrincipalFromExpiredToken(TokenConfig appSettings, string token)

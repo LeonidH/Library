@@ -11,22 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c7ab5fe-412b-4f67-ae75-9022e8006e1a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Library.Data/Entities/Book.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library.Data/Entities/BookInstance.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library.Data/Entities/BookRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library.Data/Entities/Library.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library.Data/EntityConfigurations/BookConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library.Data/EntityConfigurations/BookInstanceConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library.Data/EntityConfigurations/BookRequestConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library.Data/EntityConfigurations/LibraryConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library.Core/UserGroup/Services/UserService.Get.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/dataSources/16a5e250-b487-4465-9bf8-8ed7bc82f0ee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/dataSources/16a5e250-b487-4465-9bf8-8ed7bc82f0ee.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Data/Migrations/20240415164102_Initial.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Data/Migrations/20240415164102_Initial.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Core/UserGroup/Utils/TokenUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Core/UserGroup/Utils/TokenUtil.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Server/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Server/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Server/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library.Server/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library.Server/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library.client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/library.client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library.client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/library.client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library.client/src/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/library.client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/library.client/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library.client/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library.client/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/library.client/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library.client/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/library.client/src/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library.client/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/library.client/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +40,25 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/8486d31e24f30e3fa1809a95699a0adc16f448d7/src/Identity/EntityFrameworkCore/src/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/8486d31e24f30e3fa1809a95699a0adc16f448d7/src/Identity/EntityFrameworkCore/src/IdentityUserContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/8486d31e24f30e3fa1809a95699a0adc16f448d7/src/Identity/Extensions.Core/src/UserManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/8486d31e24f30e3fa1809a95699a0adc16f448d7/src/Identity/Extensions.Stores/src/IdentityUser.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/8486d31e24f30e3fa1809a95699a0adc16f448d7/src/Mvc/Mvc.Core/src/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/0e8ece3526ef3575fb85de308b8a4cd5840f928e/src/EFCore.Relational/Extensions/RelationalDatabaseFacadeExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/0e8ece3526ef3575fb85de308b8a4cd5840f928e/src/EFCore/Infrastructure/DatabaseFacade.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/0e8ece3526ef3575fb85de308b8a4cd5840f928e/src/EFCore/ModelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Private.CoreLib/src/System/Runtime/CompilerServices/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Private.CoreLib/src/System/Threading/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Private.CoreLib/src/System/Threading/Tasks/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2d7eea252964e69be94cb9c847b371b23e4dd470/src/libraries/System.Private.CoreLib/src/System/Threading/Tasks/TaskContinuation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0706dcfabddf4241b89dd5a90ab7061526a828/06/0e917bf0/IDatabaseCreator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/113641a9e9a8478ab04505b1621f8fb4188b0/a5/037911b8/ClaimTypes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eac217589439673846d1695b6e3ca1dba9490abb03c35edb0f189479c7e77af/JwtSecurityTokenHandler.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -63,27 +70,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Library.Server: https.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\personal\\Test\\Library\\library.client\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Library.Server: https.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "XThreadsFramesViewSplitterKey": "0.63188976",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "D:\\personal\\Test\\Library\\library.client\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\l.hubar\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\l.hubar\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\l.hubar\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\l.hubar\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\l.hubar\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\l.hubar\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Library.Server: https">
     <configuration name="Library.Server: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Library.Server/Library.Server.csproj" />
@@ -151,7 +159,10 @@
       <updated>1713160420949</updated>
       <workItem from="1713160421505" duration="2972000" />
       <workItem from="1713187886882" duration="11996000" />
-      <workItem from="1713218451114" duration="12320000" />
+      <workItem from="1713218451114" duration="13440000" />
+      <workItem from="1713278794847" duration="1409000" />
+      <workItem from="1713290681472" duration="2028000" />
+      <workItem from="1713299307542" duration="21747000" />
     </task>
     <servers />
   </component>
@@ -167,56 +178,69 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Library.Server/Program.cs</url>
+          <url>file://$PROJECT_DIR$/Library.Server/Controllers/UserController.cs</url>
+          <line>30</line>
+          <properties documentPath="D:\personal\Test\Library\Library.Server\Controllers\UserController.cs" containingFunctionPresentation="Method 'Register'">
+            <startOffsets>
+              <option value="841" />
+            </startOffsets>
+            <endOffsets>
+              <option value="890" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library.Core/UserGroup/Services/UserService.Register.cs</url>
           <line>18</line>
-          <properties documentPath="D:\personal\Test\Library\Library.Server\Program.cs" containingFunctionPresentation="Method 'Main'">
+          <properties documentPath="D:\personal\Test\Library\Library.Core\UserGroup\Services\UserService.Register.cs" containingFunctionPresentation="Method 'UserRegisterAsync'">
             <startOffsets>
-              <option value="490" />
+              <option value="529" />
             </startOffsets>
             <endOffsets>
-              <option value="593" />
+              <option value="550" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Library.Server/Program.cs</url>
-          <line>35</line>
-          <properties documentPath="D:\personal\Test\Library\Library.Server\Program.cs" containingFunctionPresentation="Lambda expression inside Method 'Main'">
+          <url>file://$PROJECT_DIR$/Library.Core/HttpModels/AppResponse.cs</url>
+          <line>45</line>
+          <properties documentPath="D:\personal\Test\Library\Library.Core\HttpModels\AppResponse.cs" containingFunctionPresentation="Method 'SetErrorResponse'">
             <startOffsets>
-              <option value="1396" />
+              <option value="1298" />
             </startOffsets>
             <endOffsets>
-              <option value="1480" />
+              <option value="1316" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Library.Server/Program.cs</url>
-          <line>118</line>
-          <properties documentPath="D:\personal\Test\Library\Library.Server\Program.cs" containingFunctionPresentation="Method 'Main'">
+          <url>file://$PROJECT_DIR$/Library.Server/Controllers/UserController.cs</url>
+          <line>36</line>
+          <properties documentPath="D:\personal\Test\Library\Library.Server\Controllers\UserController.cs" containingFunctionPresentation="Method 'Login'">
             <startOffsets>
-              <option value="4852" />
+              <option value="1009" />
             </startOffsets>
             <endOffsets>
-              <option value="4888" />
+              <option value="1055" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Library.Data/DbContextInitialiser.cs</url>
-          <line>21</line>
-          <properties documentPath="D:\personal\Test\Library\Library.Data\DbContextInitialiser.cs" containingFunctionPresentation="Method 'InitialiseAsync'">
+          <url>file://$PROJECT_DIR$/Library.Server/Controllers/UserController.cs</url>
+          <line>19</line>
+          <properties documentPath="D:\personal\Test\Library\Library.Server\Controllers\UserController.cs" containingFunctionPresentation="Method 'Get'">
             <startOffsets>
-              <option value="740" />
+              <option value="571" />
             </startOffsets>
             <endOffsets>
-              <option value="785" />
+              <option value="644" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

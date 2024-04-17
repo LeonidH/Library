@@ -1,6 +1,7 @@
 ﻿using Library.Core.HttpModels;
 using Library.Core.UserGroup.Models;
 using Library.Core.UserGroup.Services;
+using Library.Data.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,6 +12,18 @@ namespace Library.Server.Controllers;
 public class UserController(UserService userService) : ControllerBase
 {
     private readonly UserService _userService = userService;
+    
+    [HttpGet]
+    [Authorize(Roles = "Administrator")]
+    public async Task<IActionResult> Get(int page, int pageSize)
+    {
+        var (users, total) = await _userService.GetAppUsersAsync(page, pageSize);
+        return Ok(new
+        {
+            users,
+            total
+        });
+    }
     
     [HttpPost]
     public async Task<AppResponse<bool>> Register(UserRegisterRequest req)
