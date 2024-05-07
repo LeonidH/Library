@@ -1,4 +1,4 @@
-﻿namespace Library.Core.UserGroup.Models;
+﻿namespace Library.Core.DataServices.UserGroup.Models;
 
 public class UserRefreshTokenResponse
 {

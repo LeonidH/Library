@@ -8,10 +8,8 @@ public enum BookInstanceStatus
     Lost
 }
 
-public class BookInstance
+public class BookInstance : BaseEntity<Guid>
 {
-    public Guid Id { get; set; }
-    
     public string Isbn { get; set; }
     
     public Guid LibraryId { get; set; }

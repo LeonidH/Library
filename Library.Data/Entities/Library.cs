@@ -1,9 +1,7 @@
 ﻿namespace Library.Data.Entities;
 
-public class Library
+public class Library : BaseEntity<Guid>
 {
-    public Guid Id { get; set; }
-    
     public string Name { get; set; }
     
     public string Address { get; set; }

@@ -14,8 +14,8 @@ export const LoginRegistrationForm = () => {
         dispatch(resetToken());
     }, [dispatch]);
 
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('librarian@library.com');
+    const [password, setPassword] = useState('Password123!');
 
     const handleEmailChange = useCallback(
         (e: React.ChangeEvent<HTMLInputElement>) => {

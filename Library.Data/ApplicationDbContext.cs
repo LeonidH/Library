@@ -19,5 +19,10 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
+        
+        modelBuilder.Entity<Book>().HasQueryFilter(x => x.RowDeletedUtc == null);
+        modelBuilder.Entity<BookInstance>().HasQueryFilter(x => x.RowDeletedUtc == null);
+        modelBuilder.Entity<BookRequest>().HasQueryFilter(x => x.RowDeletedUtc == null);
+        modelBuilder.Entity<Entities.Library>().HasQueryFilter(x => x.RowDeletedUtc == null);
     }
 }

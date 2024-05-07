@@ -2,6 +2,7 @@ import { Action, ThunkAction, configureStore } from "@reduxjs/toolkit";
 import storage from "redux-persist/lib/storage"; 
 import { persistReducer } from "redux-persist";
 import authReducer from "./features/auth/authSlice";
+import bookReducer from "./features/book/bookSlice";
 
 const authPersistConfig = {
   key: "auth",
@@ -10,7 +11,8 @@ const authPersistConfig = {
 
 export const store = configureStore({
     reducer: {
-      auth: persistReducer(authPersistConfig, authReducer)
+      auth: persistReducer(authPersistConfig, authReducer),
+      books: bookReducer
     },
 });
 

@@ -5,7 +5,7 @@ using Library.Core.Options;
 using Library.Data.Entities;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Library.Core.UserGroup.Utils;
+namespace Library.Core.DataServices.UserGroup.Utils;
 
 public static class TokenUtil
 {

@@ -1,10 +1,16 @@
 using System.Text;
+using System.Text.Json;
+using Library.Core.DataServices;
+using Library.Core.DataServices.Book.Services;
+using Library.Core.DataServices.UserGroup.Services;
 using Library.Core.Options;
-using Library.Core.UserGroup.Services;
 using Library.Data;
 using Library.Data.Entities;
+using Library.Server.OData;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.OData;
+using Microsoft.AspNetCore.OData.Query.Expressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -58,10 +64,28 @@ namespace Library.Server
                 };
             });
 
-            builder.Services.AddScoped<DbContextInitialiser>();
-            builder.Services.AddTransient<UserService>();
+            builder.Services.AddTransient<DbContextInitialiser>();
+            builder.Services.AddScoped<BaseDataService<Book, Guid>, BookService>();
+            builder.Services.AddScoped<IUserService, UserService>();
 
-            builder.Services.AddControllers();
+            builder.Services
+                .AddControllers()
+                .AddJsonOptions(options =>
+                    options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase)
+                .AddOData(
+                    options =>
+                        options
+                            .Count()
+                            .Expand()
+                            .OrderBy()
+                            .Select()
+                            .SetMaxTop(100)
+                            .SkipToken()
+                            .Filter()
+                            .AddRouteComponents("odata", EdmModelBuilder.GetEdmModel())
+                );
+
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
 
@@ -107,27 +131,38 @@ namespace Library.Server
 
             var app = builder.Build();
 
-            app.UseDefaultFiles();
-            app.UseStaticFiles();
+            app.UseODataRouteDebug();
+            app.UseODataQueryRequest();
+            app.UseODataBatching();
 
-            // Configure the HTTP request pipeline.
+
             if (app.Environment.IsDevelopment())
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-                
                 using var scope = app.Services.CreateScope();
                 var initializer = scope.ServiceProvider.GetRequiredService<DbContextInitialiser>();
+                var userService = scope.ServiceProvider.GetRequiredService<IUserService>();
+                var bookService = scope.ServiceProvider.GetRequiredService<BaseDataService<Book, Guid>>();
+
                 await initializer.InitialiseAsync();
+                await userService.InitializeAsync();
+                await bookService.InitializeAsync();
+
+                app.UseSwagger();
+                app.UseSwaggerUI();
             }
 
+            app.UseRouting();
             app.UseHttpsRedirection();
-            app.UseCors("webAppRequests");
+            app.UseCors(x => x
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true)
+                .AllowCredentials());
+
             app.UseAuthentication();
             app.UseAuthorization();
-            app.MapControllers();
-            app.MapFallbackToFile("/index.html");
-            
+
+            app.UseEndpoints(endpoints => endpoints.MapControllers());
             await app.RunAsync();
         }
     }

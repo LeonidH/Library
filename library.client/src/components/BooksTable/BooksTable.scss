@@ -1,0 +1,33 @@
+.toolbar_books {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .toolbar_books__search {
+        max-width: 150px;
+    }
+}
+
+.modal_update-book {
+    .modal_update-book__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    .modal_update-book__content {
+        width: 500px;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 10px;
+    }
+}
+
+.books-table {
+    table {
+        min-width: 100%;
+    }
+}

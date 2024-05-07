@@ -16,10 +16,8 @@ public enum RequestStatus
 }
 
 
-public class BookRequest
+public class BookRequest : BaseEntity<Guid>
 {
-    public Guid Id { get; set; }
-
     public string Isbn { get; set; }
 
     public string UserId { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace Library.Core.UserGroup.Models;
+﻿namespace Library.Core.DataServices.UserGroup.Models;
 
-public class UserRefreshTokenRequest
+public class UserLoginResponse
 {
     public required string AccessToken { get; set; }
     public required string RefreshToken { get; set; }

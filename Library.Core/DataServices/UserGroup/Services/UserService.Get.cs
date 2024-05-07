@@ -1,7 +1,7 @@
 ﻿using Library.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Library.Core.UserGroup.Services;
+namespace Library.Core.DataServices.UserGroup.Services;
 
 public partial class UserService
 {

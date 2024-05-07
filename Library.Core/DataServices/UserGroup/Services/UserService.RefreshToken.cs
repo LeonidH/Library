@@ -1,8 +1,8 @@
-﻿using Library.Core.HttpModels;
-using Library.Core.UserGroup.Models;
-using Library.Core.UserGroup.Utils;
+﻿using Library.Core.DataServices.UserGroup.Models;
+using Library.Core.DataServices.UserGroup.Utils;
+using Library.Core.HttpModels;
 
-namespace Library.Core.UserGroup.Services;
+namespace Library.Core.DataServices.UserGroup.Services;
 
 public partial class UserService
 {

@@ -1,9 +1,9 @@
-﻿using Library.Core.HttpModels;
-using Library.Core.UserGroup.Models;
+﻿using Library.Core.DataServices.UserGroup.Models;
+using Library.Core.HttpModels;
 using Library.Data.Entities;
 using Microsoft.AspNetCore.Identity;
 
-namespace Library.Core.UserGroup.Services;
+namespace Library.Core.DataServices.UserGroup.Services;
 
 public partial class UserService
 {

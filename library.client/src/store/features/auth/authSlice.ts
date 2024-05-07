@@ -5,7 +5,7 @@ import { AppResponse, Messages } from '../../../app/http';
 import { loginApiCall, logoutApiCall, refreshTokenApiCall, registerApiCall } from './auth.API';
 
 export interface User {
-    id: string;
+    Id: string;
     RoleClaim: Array<string>;
     UserName: string;
     UserRole: string;
